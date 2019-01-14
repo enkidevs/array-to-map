@@ -1,6 +1,6 @@
 {
   "name": "@enkidevs/array-to-map",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "description": "Utility for generalized mapping of an array to a map",
   "scripts": {
     "check-branch": "enkidevs-assert-restricted-branch",
