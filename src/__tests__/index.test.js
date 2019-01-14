@@ -1,4 +1,3 @@
-const isObject = require('lodash.isobject');
 const arrayToMap = require('../');
 
 describe('arrayToMap should convert array to map', () => {

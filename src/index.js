@@ -1,5 +1,3 @@
-const isObject = require('lodash.isobject');
-
 module.exports = function arrayToMap(array, keyMapper = defaultKeyMapper) {
   if (!Array.isArray(array)) {
     throw Error('must past in an array');
