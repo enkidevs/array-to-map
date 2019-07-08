@@ -38,14 +38,12 @@
     "access": "public"
   },
   "lint-staged": {
-    "linters": {
-      "*.{js,jsx}": [
-        "npm run check-branch",
-        "npm run format",
-        "npm run lint",
-        "git add"
-      ]
-    }
+    "*.{js}": [
+      "npm run check-branch",
+      "npm run format",
+      "npm run lint",
+      "git add"
+    ]
   },
   "license": "MIT",
   "dependencies": {},
