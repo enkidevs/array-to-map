@@ -9,13 +9,23 @@ describe('arrayToMap should convert array to map', () => {
 
   test('should map an array to Map<key,value>', () => {
     const array = [1, 2, 3];
-    expect(arrayToMap(array)).toEqual(new Map([[0, 1], [1, 2], [2, 3]]));
+    expect(arrayToMap(array)).toEqual(
+      new Map([
+        [0, 1],
+        [1, 2],
+        [2, 3],
+      ])
+    );
   });
 
   test('should map apply a custom key mapper for array of primitives', () => {
     const array = [1, 2, 3];
     expect(arrayToMap(array, (_, pos) => `pos-${pos}`)).toEqual(
-      new Map([['pos-0', 1], ['pos-1', 2], ['pos-2', 3]])
+      new Map([
+        ['pos-0', 1],
+        ['pos-1', 2],
+        ['pos-2', 3],
+      ])
     );
   });
 
