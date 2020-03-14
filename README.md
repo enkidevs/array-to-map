@@ -7,13 +7,17 @@ array-to-map
 Converting an array into a [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
 ```js
-const map = arrayToMap([1,2,3]);
+const map = arrayToMap([
+  { id: 'a', value: 1 },
+  { id: 'b', value: 2 },
+  { id: 'c', value: 3 },
+]);
 console.log(map);
 /*
 {
-  {0 => 1}
-  {1 => 2}
-  {2 => 3}
+  {0 => { id: 'a', value: 1 }}
+  {1 => { id: 'b', value: 2 }}
+  {2 => { id: 'c', value: 3 }}
 }
 */
 ```
@@ -29,9 +33,9 @@ const map = arrayToMap([
 console.log(map);
 /*
 {
-  {'a' => 1}
-  {'b' => 2}
-  {'c' => 3}
+  {'a' => { id: 'a', value: 1 }}
+  {'b' => { id: 'b', value: 2 }}
+  {'c' => { id: 'c', value: 3 }}
 }
 */
 ```
