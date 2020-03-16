@@ -1,4 +1,4 @@
-const arrayToMap = require('../');
+const arrayToMap = require('..');
 
 describe('arrayToMap should convert array to map', () => {
   test('should throw for non array inputs', () => {
