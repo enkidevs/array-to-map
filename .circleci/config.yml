@@ -4,7 +4,7 @@ jobs:
   install:
     working_directory: ~/array-to-map
     docker:
-      - image: circleci/node:8.10.0
+      - image: circleci/node:12.6.1
     steps:
       - checkout
       - restore_cache:
