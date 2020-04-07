@@ -35,7 +35,7 @@ describe('arrayToMap should convert array to map', () => {
       { id: 'b', value: 2 },
       { id: 'c', value: 3 },
     ];
-    expect(arrayToMap(array, x => x.id)).toEqual(
+    expect(arrayToMap(array, (x) => x.id)).toEqual(
       new Map([
         [array[0].id, array[0]],
         [array[1].id, array[1]],
